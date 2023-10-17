@@ -9,15 +9,13 @@ namespace Figurki
     internal class Point : Figura
     {
         public string Name;
-        public int[] Coords = { 0, 0 };
 
-        public Point (int coords, int coords2)
-        {
-            Coords = { coords, coords2 };
+        public Point ( int coords, int coords2, int coords3) : base ( coords, coords2, coords3)
+        {    
             Name = "Точка";
         }
 
-        override public int GetSize()
+        override public double GetSize()
         { 
             return 0; 
         }

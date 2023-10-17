@@ -9,9 +9,21 @@ namespace Figurki
     internal class Figura
     {
         public string Name;
-        public int[] Coords;
+        public int x;
+        public int y;
+        public int z;
 
-        virtual public int GetSize()
+        public Figura (string name, int coords, int coords2) 
+        {
+
+        }
+        public Figura(int coords, int coords2, int coords3)
+        {
+            x = coords;
+            y = coords2;
+            z = coords3;
+        }
+        virtual public double GetSize()
         {
             return 0;
         }
