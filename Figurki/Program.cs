@@ -11,3 +11,17 @@ Console.WriteLine("KRUG: " + krug.GetSize());
 
 Shar shar = new Shar(1, 1, 1, 1);
 Console.WriteLine("SHAR: " + shar.GetSize());
+
+PointOkrug pointokrug = new PointOkrug(1, 1, 1, 1);
+Console.WriteLine("POINTOKRUG: " + pointokrug.GetSize());
+
+PointKrug pointkrug = new PointKrug(1, 1, 1, 1);
+Console.WriteLine("POINTKRUG: " + pointkrug.GetSize());
+
+PointShar pointshar = new PointShar(1, 1, 1, 1);
+Console.WriteLine("POINTSHAR: " + pointshar.GetSize());
+
+Figura NEsharik = new Figura(1, 1, 1);
+Shar sharik = new Shar(1, 1, 1, 1);
+NEsharik = sharik;
+Console.WriteLine("NESHARIK: " + NEsharik.GetSize());
