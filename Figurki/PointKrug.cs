@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace Figurki
 {
-    internal class PointKrug : Figura
+    internal class PointKrug
     {
         public PointOkrug okrug;
-        public PointKrug(int radius, int coords, int coords2, int coords3) : base(coords, coords2, coords3)
+        public PointKrug(PointOkrug okrug)
         {
-            okrug = new PointOkrug(radius, coords, coords2, coords3);
+            this.okrug = okrug;
         }
-        override public double GetSize()
+        public double GetSize()
         {
             return Math.PI * Math.Pow(okrug.radius, 2);
         }

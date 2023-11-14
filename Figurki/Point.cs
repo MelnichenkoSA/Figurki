@@ -8,7 +8,6 @@ namespace Figurki
 {
     internal class Point : Figura
     {
-        public string Name;
 
         public Point ( int coords, int coords2, int coords3) : base ( coords, coords2, coords3)
         {    

@@ -6,18 +6,18 @@ using System.Threading.Tasks;
 
 namespace Figurki
 {
-    internal class PointOkrug : Figura
+    internal class PointOkrug 
     {
         public int radius;
         public Point center;
 
-        public PointOkrug(int radius, int coords, int coords2, int coords3) : base(coords, coords2, coords3)
+        public PointOkrug(int radius, Point center) 
         {
             this.radius = radius;
-            center = new Point(coords, coords2, coords3);
+            this.center = center;
         }
 
-        override public double GetSize()
+        public double GetSize()
         {
             return 2 * Math.PI * radius;
         }

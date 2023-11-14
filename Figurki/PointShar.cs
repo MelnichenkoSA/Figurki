@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace Figurki
 {
-    internal class PointShar : Figura
+    internal class PointShar 
     {
         public PointKrug krug;
-        public PointShar(int radius, int coords, int coords2, int coords3) : base(coords, coords2, coords3)
+        public PointShar(PointKrug krug) 
         {
-            krug = new PointKrug(radius, coords, coords2, coords3);
+            this.krug = krug;
         }
 
-        override public double GetSize()
+        public double GetSize()
         {
             return 4.0 / 3.0 * Math.PI * Math.Pow(krug.okrug.radius, 3);
         }
